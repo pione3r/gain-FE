@@ -394,10 +394,28 @@ export default function SignupPage() {
             </div>
 
             <div>
-              <label htmlFor="phone" className="block text-sm font-normal mb-1">
+              <label htmlFor="phone" className="block text-sm font-medium mb-1">
                 휴대폰 번호
               </label>
               <div className="flex gap-2">
+                <select
+                  className="w-[100px] flex-shrink-0 bg-white border border-gray-300 rounded-md px-2 py-2 text-sm"
+                  value={formData.countryCode}
+                  onChange={(e) =>
+                    setFormData((prev) => ({ ...prev, countryCode: e.target.value }))
+                  }
+                >
+                  <option value="+1">+1</option>
+                  <option value="+44">+44</option>
+                  <option value="+49">+49</option>
+                  <option value="+61">+61</option>
+                  <option value="+81">+81</option>
+                  <option value="+82">+82</option>
+                  <option value="+86">+86</option>
+                  <option value="+91">+91</option>
+                  <option value="+852">+852</option>
+                  <option value="+886">+886</option>
+                </select>
                 <Input
                   id="phone"
                   name="phone"
