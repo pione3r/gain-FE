@@ -12,7 +12,7 @@ export default function Footer() {
             </Link>
           </div>
 
-          <div className="col-span-2">
+          {/* <div className="col-span-2">
             <div className="flex flex-col md:flex-row md:justify-between">
               <div className="mb-6 md:mb-0">
                 <h3 className="text-white font-medium mb-3">회사 정보</h3>
@@ -40,11 +40,11 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="border-t border-gray-800 mt-10 pt-6 text-sm text-gray-500 text-right">
-          <p>COPYRIGHT © 2023 farmersWorld. ALL RIGHTS RESERVED.</p>
+          <p>COPYRIGHT © 2025 GAIN. ALL RIGHTS RESERVED.</p>
         </div>
       </div>
     </footer>

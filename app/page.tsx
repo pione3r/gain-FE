@@ -119,7 +119,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
                 <div className="flex justify-center mb-4">
-                  <Image src="/process-1.png" alt="간단한 설문 작성" width={80} height={80} />
+                  <Image src="/landing-process-1.png" alt="간단한 설문 작성" width={80} height={80} />
                 </div>
                 <h3 className="font-bold mb-2">간단한 설문 작성</h3>
                 <p className="text-sm text-gray-600">
@@ -129,7 +129,7 @@ export default function Home() {
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
                 <div className="flex justify-center mb-4">
-                  <Image src="/process-2.png" alt="AI 맞춤 추천" width={80} height={80} />
+                  <Image src="/landing-process-2.png" alt="AI 맞춤 추천" width={80} height={80} />
                 </div>
                 <h3 className="font-bold mb-2">AI 맞춤 추천</h3>
                 <p className="text-sm text-gray-600">
@@ -139,7 +139,7 @@ export default function Home() {
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
                 <div className="flex justify-center mb-4">
-                  <Image src="/process-3.png" alt="편리하게 일정잡기" width={80} height={80} />
+                  <Image src="/landing-process-3.png" alt="편리하게 일정잡기" width={80} height={80} />
                 </div>
                 <h3 className="font-bold mb-2">편리하게 일정잡기</h3>
                 <p className="text-sm text-gray-600">
@@ -151,7 +151,7 @@ export default function Home() {
         </section>
 
         {/* 스폰서 섹션 */}
-        <section className="py-16 bg-gray-200">
+        {/* <section className="py-16 bg-gray-200">
           <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">스폰서</h2>
             <div className="flex flex-wrap justify-center gap-10 mt-8">
@@ -170,10 +170,10 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* 통계 섹션 */}
-        <section className="py-16 md:py-24">
+        {/* <section className="py-16 md:py-24">
           <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">
               전 세계에서 함께 성장하는 GAIN 멘토링 네트워크
@@ -222,7 +222,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       <Footer />
