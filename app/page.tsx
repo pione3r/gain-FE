@@ -117,7 +117,7 @@ export default function Home() {
                         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
                             <div className="rounded-lg bg-white p-6 text-center shadow-md">
                                 <div className="mb-4 flex justify-center">
-                                    <Image src="/process-1.png" alt="간단한 설문 작성" width={80} height={80} />
+                                    <Image src="/landing-process-1.png" alt="간단한 설문 작성" width={80} height={80} />
                                 </div>
                                 <h3 className="mb-2 font-bold">간단한 설문 작성</h3>
                                 <p className="text-sm text-gray-600">
@@ -127,7 +127,7 @@ export default function Home() {
 
                             <div className="rounded-lg bg-white p-6 text-center shadow-md">
                                 <div className="mb-4 flex justify-center">
-                                    <Image src="/process-2.png" alt="AI 맞춤 추천" width={80} height={80} />
+                                    <Image src="/landing-process-2.png" alt="AI 맞춤 추천" width={80} height={80} />
                                 </div>
                                 <h3 className="mb-2 font-bold">AI 맞춤 추천</h3>
                                 <p className="text-sm text-gray-600">
@@ -137,7 +137,12 @@ export default function Home() {
 
                             <div className="rounded-lg bg-white p-6 text-center shadow-md">
                                 <div className="mb-4 flex justify-center">
-                                    <Image src="/process-3.png" alt="편리하게 일정잡기" width={80} height={80} />
+                                    <Image
+                                        src="/landing-process-3.png"
+                                        alt="편리하게 일정잡기"
+                                        width={80}
+                                        height={80}
+                                    />
                                 </div>
                                 <h3 className="mb-2 font-bold">편리하게 일정잡기</h3>
                                 <p className="text-sm text-gray-600">
@@ -149,38 +154,38 @@ export default function Home() {
                 </section>
 
                 {/* 스폰서 섹션 */}
-                <section className="bg-gray-200 py-16">
-                    <div className="mx-auto max-w-7xl px-6">
-                        <h2 className="mb-6 text-center text-2xl font-bold md:text-3xl">스폰서</h2>
-                        <div className="mt-8 flex flex-wrap justify-center gap-10">
-                            {[1, 2, 3, 4].map((sponsor) => (
-                                <div
-                                    key={sponsor}
-                                    className="opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
-                                >
-                                    <Image
-                                        src={`/sponsor-${sponsor}.png`}
-                                        alt={`스폰서 ${sponsor}`}
-                                        width={120}
-                                        height={60}
-                                    />
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+                {/* <section className="py-16 bg-gray-200">
+          <div className="max-w-7xl mx-auto px-6">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">스폰서</h2>
+            <div className="flex flex-wrap justify-center gap-10 mt-8">
+              {[1, 2, 3, 4].map((sponsor) => (
+                <div
+                  key={sponsor}
+                  className="grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
+                >
+                  <Image
+                    src={`/sponsor-${sponsor}.png`}
+                    alt={`스폰서 ${sponsor}`}
+                    width={120}
+                    height={60}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section> */}
 
                 {/* 통계 섹션 */}
-                <section className="py-16 md:py-24">
-                    <div className="mx-auto max-w-7xl px-6">
-                        <h2 className="mb-12 text-center text-2xl font-bold md:text-3xl">
-                            전 세계에서 함께 성장하는 GAIN 멘토링 네트워크
-                        </h2>
-                        <p className="mb-12 text-center">
-                            GAIN은 전 세계 유명 학교 졸업생들과 현직자를 연결하는
-                            <br />
-                            글로벌 아트·디자인 멘토링 플랫폼입니다.
-                        </p>
+                {/* <section className="py-16 md:py-24">
+          <div className="max-w-7xl mx-auto px-6">
+            <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">
+              전 세계에서 함께 성장하는 GAIN 멘토링 네트워크
+            </h2>
+            <p className="text-center mb-12">
+              GAIN은 전 세계 유명 학교 졸업생들과 현직자를 연결하는
+              <br />
+              글로벌 아트·디자인 멘토링 플랫폼입니다.
+            </p>
 
                         <div className="mx-auto grid max-w-3xl grid-cols-1 gap-10 md:grid-cols-3">
                             <div className="text-center">
@@ -207,20 +212,20 @@ export default function Home() {
                                 <p className="text-gray-400">활동 멘토</p>
                             </div>
 
-                            <div className="text-center">
-                                <Image
-                                    src="/icon-countries.png"
-                                    alt="국가 수"
-                                    width={60}
-                                    height={60}
-                                    className="mx-auto mb-4"
-                                />
-                                <div className="mb-2 text-4xl font-bold">20+</div>
-                                <p className="text-gray-400">국가 수</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+              <div className="text-center">
+                <Image
+                  src="/icon-countries.png"
+                  alt="국가 수"
+                  width={60}
+                  height={60}
+                  className="mx-auto mb-4"
+                />
+                <div className="text-4xl font-bold mb-2">20+</div>
+                <p className="text-gray-400">국가 수</p>
+              </div>
+            </div>
+          </div>
+        </section> */}
             </main>
 
             <Footer />
