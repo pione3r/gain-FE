@@ -57,7 +57,7 @@ export default function RecommandPage() {
   ]
 
   return (
-    <div className="w-ful flex flex-col items-center justify-center py-20">
+    <div className="w-ful flex flex-col items-center justify-center py-10 lg:py-20">
       <div className="flex w-full max-w-[1024px] flex-col items-center px-8">
         <h1 className="mb-8 text-center text-3xl font-medium text-pretty">멘티님에게 맞는 TOP 3 추천</h1>
         <p className="text-center font-medium text-pretty text-[#BFC1C2]">
@@ -92,7 +92,7 @@ export default function RecommandPage() {
           {data.map((mentor) => (
             <div
               key={mentor.id}
-              className="flex w-full flex-col items-center gap-2 rounded-lg border border-[#767676] bg-white p-6"
+              className="flex w-full flex-col items-center gap-2 rounded-lg border border-[#5A5A5A] bg-white p-6"
             >
               <div className="relative flex justify-between gap-4">
                 <div className="relative aspect-square h-22 w-22">
@@ -125,12 +125,12 @@ export default function RecommandPage() {
                 <div className="text-xs font-medium text-[#767676]">&quot;{mentor.reviewContent}&quot;</div>
               </div>
               <Link href={`/mentor/profile/${mentor.id}`} className="flex w-full flex-col items-center">
-                <Button className="mt-2 w-2/3 bg-[#D9D9D9]" size={'sm'}>
+                <Button className="mt-2 w-2/3 rounded-xl bg-[#D9D9D9]" size={'sm'}>
                   프로필 상세 보기기
                 </Button>
               </Link>
               <Link href={`/mentor/booking/${mentor.id}`} className="flex w-full flex-col items-center">
-                <Button className="w-2/3 bg-[#FF7A59] text-white" size={'sm'}>
+                <Button className="w-2/3 rounded-xl bg-[#FF7A59] text-white" size={'sm'}>
                   멘토 매칭 시작
                 </Button>
               </Link>
