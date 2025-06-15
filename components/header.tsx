@@ -13,7 +13,7 @@ export default function Header() {
         <Link href="/service" className="font-medium">
           서비스 소개
         </Link>
-        <Link href="/mento" className="font-medium">
+        <Link href="/mentor" className="font-medium">
           멘토 찾기
         </Link>
         <Link href="/community" className="font-medium">
