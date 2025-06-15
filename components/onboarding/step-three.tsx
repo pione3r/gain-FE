@@ -30,7 +30,7 @@ export default function StepThree() {
             />
           </div>
 
-          <div className="scrollbar scrollbar-thumb-[#FF7A59] scrollbar-w-[14px] scrollbar-track-[#D9D9D980] scrollbar-thumb-rounded-[14px] mt-[34px] flex max-h-[356px] flex-col overflow-y-auto pr-[8px]">
+          <div className="scrollbar mt-[34px] flex max-h-[356px] flex-col overflow-y-auto pr-[8px]">
             {COUNTRY_LIST.map((country) => {
               const { imagePath, name } = country
 
