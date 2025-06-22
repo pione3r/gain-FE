@@ -5,9 +5,9 @@ import { Search } from 'lucide-react'
 
 export default function Header() {
   return (
-    <header className="flex h-18 w-full items-center justify-between bg-white px-6 py-4 md:px-10 lg:px-20">
-      <Link href="/" className="relative h-[40px] w-[96px]">
-        <Image src="/logo.svg" alt="GAIN 로고" fill className="object-contain" />
+    <header className="flex w-full items-center justify-between bg-white px-6 py-4 md:px-10 lg:px-20">
+      <Link href="/" className="mr-10">
+        <Image src="/logo.svg" alt="GAIN 로고" width={120} height={50} />
       </Link>
       <nav className="hidden space-x-8 md:flex">
         <Link href="/service" className="font-medium">
