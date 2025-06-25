@@ -41,8 +41,8 @@ export default function MentorProfileForm() {
   })
 
   return (
-    <div className="flex flex-col items-center gap-[150px] px-[228px] py-[98px]">
-      <div className="flex max-w-[1462px] flex-col gap-[50px]">
+    <div className="flex flex-col items-center gap-[150px] px-[16px] py-[98px]">
+      <div className="flex w-[min(1462px,100%)] flex-col gap-[50px]">
         <div className="flex flex-col gap-[50px]">
           <div className="flex flex-col gap-[50px]">
             <div className="flex flex-col gap-[60px]">
@@ -108,7 +108,7 @@ export default function MentorProfileForm() {
               <div className="flex flex-1 flex-col gap-[20px]">
                 <div className="text-2xl">간단 소개글</div>
 
-                <div className="border-gray-normal flex h-[369px] flex-1 flex-col rounded-[12px] border px-[44px] py-[50px]">
+                <div className="border-gray-normal flex max-h-[369px] flex-1 flex-col rounded-[12px] border px-[44px] py-[50px]">
                   <div className="scrollbar size-full max-w-[641px] overflow-y-auto pr-[35px] text-lg whitespace-pre-wrap">
                     <textarea
                       ref={(node) => {
